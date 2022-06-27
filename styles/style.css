@@ -1,0 +1,61 @@
+
+    body {
+        background-image: url("../images/main.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container {
+        width: 450px;
+      height: 500px;
+      background-color: rgba(210, 179, 219, 0.781);
+      margin: 250px auto 0;
+      text-align: center;
+      border-radius: 5px;
+        }
+        .container img{
+            width: 120px;
+            height: 120px;
+            margin: -60 px 0 30px 0;
+        }
+        input[type="email"], input[type="password"] {
+            width: 300px;
+            height: 50px;
+            font-size: 18px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+            padding-left: 10px;
+            background-color: #6eeafd7a;
+        }
+        .dws-submit {
+            padding: 13px 30px;
+            margin: 5px 0 20px 0;
+            font-size: 15px;
+            color: rgb(14, 13, 13);
+            border: none;
+            border-bottom: 4px solid #6eeafd;
+            cursor: pointer;
+        }
+        input[type="email"]:valid, 
+        input[type="password"]:valid {
+            background-color: #6eeafd7a   
+        }
+        input[type="email"]:invalid:not(:focus):not(:placeholder-shown), 
+        input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
+            background-color: crimson;
+        }
+        input[type="email"]:invalid:not(:focus):not(:placeholder-shown) ~ .requirements, 
+        input[type="password"]:invalid:not(:focus):not(:placeholder-shown) ~ .requirements {
+            max-height: 200px;
+            padding: 0 30px 20px 50px;
+        }
+        .requirements {
+            padding: 0 30px 0 50px;
+            color: black;
+            max-height: 0;
+            transition: 0.28s;
+            overflow: hidden;
+            color: black;
+            font-style: italic;
+        }
+        
+        
