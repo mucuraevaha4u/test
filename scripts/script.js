@@ -30,15 +30,15 @@ async function SendForm(event)
     method: 'POST' , //метод POST
     body: new FormData(form)//в класс FormData??? передает ссылку на форму
     });
-    let result = await response.json()//получаем JSON(хде он?)
-    console.log(await response.text());
+    let result = await response.text()//получаем JSON(хде он?)НЕ РАБОТАЕТ
+    //console.log(await response.text());
     // console.log(result);
 
     // проверка на статус 200
     if (response.status != 200) {
         alert("Ништяк");
     } else {
-        alert(response.status);
+        alert(result);
     }
 
 }
