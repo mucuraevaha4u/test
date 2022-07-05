@@ -39,7 +39,9 @@ async function SendForm(event)
         alert("Ништяк");
     } else {
         alert(result);
+        document.location='https://www.google.com/webhp?hl=ru&sa=X&ved=0ahUKEwjYvd2InuL4AhWRXfEDHU86D9UQPAgI';//редирект на другую страницу при нажатиb
     }
+    
 
 }
 
